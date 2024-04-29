@@ -1,0 +1,9 @@
+
+f	java:S106"+Replace this use of System.out by a logger.(ÅõıêJ$8065e376-c5f1-4105-9707-6c35ebf39ba9
+k	java:S106"+Replace this use of System.out by a logger.(Å¤÷şÿÿÿÿJ$004cce7d-b251-42cd-a113-9a5d19e6a28e
+X	java:S125"<This block of commented-out lines of code should be removed.(²Š©8‹İÏ­ò1
+|
+java:S1612"@Replace this lambda with method reference 'System.out::println'.(£™‘J$24e06b46-07a8-4d68-9999-b4b9e92a83de
+f	java:S106"+Replace this use of System.out by a logger.(£™‘J$fe1e0044-4028-4d2a-8046-a952ae6c26ce
+L
+java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ8İÏ­ò1

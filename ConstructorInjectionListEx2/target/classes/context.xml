@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="que" class="com.test.Question">
+		<constructor-arg value="1" />
+		<constructor-arg value="what is java?" />
+		<constructor-arg>
+			<list value-type="com.test.Answer">
+				<ref bean="a1" />
+				<ref bean="a2" />
+			</list>
+		</constructor-arg>
+	</bean>
+	<bean id="a1" class="com.test.Answer">
+		<constructor-arg value="491" />
+		<constructor-arg
+			value="java is a programming language...!" />
+		<constructor-arg value="pradeep" />
+	</bean>
+	<bean id="a2" class="com.test.Answer">
+		<constructor-arg value="492" />
+		<constructor-arg
+			value="java is a multithreaded programming language...!" />
+		<constructor-arg value="kumar" />
+	</bean>
+</beans>  

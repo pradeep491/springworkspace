@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="que" class="com.test.Question">
+		<constructor-arg value="1" />
+		<constructor-arg value="what is java?" />
+		<constructor-arg>
+			<map key-type="com.test.Answer" value-type="com.test.User">
+				<entry key-ref="ans1" value-ref="user1" />
+				<entry key-ref="ans2" value-ref="user2" />
+			</map>
+		</constructor-arg>
+	</bean>
+	<bean id="ans1" class="com.test.Answer">
+		<constructor-arg value="491" />
+		<constructor-arg
+			value="java is a programming language...!" />
+		<constructor-arg value="2023/12/24" />
+	</bean>
+	<bean id="ans2" class="com.test.Answer">
+		<constructor-arg value="492" />
+		<constructor-arg
+			value="java is a object oriented programming language...!" />
+		<constructor-arg value="2023/12/25" />
+	</bean>
+	<bean id="user1" class="com.test.User">
+		<constructor-arg value="591" />
+		<constructor-arg value="pradeep" />
+		<constructor-arg value="k.pradeep0491@gmail.com" />
+	</bean>
+	<bean id="user2" class="com.test.User">
+		<constructor-arg value="592" />
+		<constructor-arg value="kumar" />
+		<constructor-arg
+			value="pradeepkumarkandyala@gmail.com" />
+	</bean>
+</beans>  
