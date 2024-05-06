@@ -18,8 +18,10 @@ public class Question {
 	public void show() {
 		System.out.println("Question id-" + id);
 		System.out.println("Question Name-" + qName);
-		for (Entry<Answer, User> entry : answers.entrySet()) {
+		for (Map.Entry<Answer, User> entry : answers.entrySet()) {
 			System.out.println("Answer is-" + entry.getKey() + " posted by-" + entry.getValue());
 		}
+		System.out.println("======================");
+		answers.forEach((k, v) -> System.out.println("Key::: " + k + ": Value::: " + v));
 	}
 }
